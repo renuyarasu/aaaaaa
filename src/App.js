@@ -1,8 +1,15 @@
 import './App.css';
+import Breed from './components/Breed/Breed';
+import Menu from './components/Menu/Menu';
+import Select from './components/Select/Select';
 
 function App() {
   return (
-    <h1>Learn React</h1>
+    <>
+      <Menu/>
+      <Select />
+      <Breed />
+    </>
   );
 }
 
