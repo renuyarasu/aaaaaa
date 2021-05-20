@@ -1,4 +1,4 @@
-import React, { Component } from 'react' 
+import React, { Component } from "react";
 import "./App.css";
 import Menu from "./components/Menu/Menu";
 import Select from "./components/Select/Select";
@@ -34,22 +34,26 @@ class App extends Component {
       //Code will jump here if there is a network problem
       this.setState({
         error: true,
-      })
+      });
       alert("Sorry, can not display the data!");
     }
-  }
+  };
   selectHandler = (breed) => {
     this.setState({
-      selectBreed:breed
-    })
-  }
+      selectBreed: breed,
+    });
+  };
   render() {
     console.log(this.state.selectBreed);
     return (
       <div className="App">
         <Menu />
-        <Select breedsList={this.state.breedsList} onSelect={this.selectHandler} isError={this.state.error} />
-        <Breed />
+        <Select
+          breedsList={this.state.breedsList}
+          onSelect={this.selectHandler}
+          isError={this.state.error}
+        />
+        <Breed breed={this.state.selectBreed} />
       </div>
     );
   }

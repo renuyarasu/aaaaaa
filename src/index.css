@@ -1,29 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 img {
-  border: none;
+	border: none;
 }
 ol,
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 body {
-  font-family: "Pangolin", cursive;
-  font-style: 14px;
-  color: #000;
-  line-height: 1.8;
+	font-family: "Pangolin", cursive;
+	font-style: 14px;
+	color: #000;
+	line-height: 1.8;
 }
 @media (min-width: 451px) {
-  body {
-    font-style: 18px;
-  }
+	body {
+		font-style: 18px;
+	}
 }
 @media (min-width: 769px) {
-  body {
-    font-style: 20px;
-  }
+	body {
+		font-style: 20px;
+	}
 }
