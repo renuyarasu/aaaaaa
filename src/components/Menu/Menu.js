@@ -7,12 +7,10 @@ const toggleMenuClasses = () => {
 
     let mobileMenu = document.getElementById('menu-container');
         mobileMenu.classList.toggle('opened');
-
 }
-
 const Menu = () => {
   return (
-    <>
+    <div>
       <div className="burger" id="burger" onClick={toggleMenuClasses}>
         <div className="lines">
           <div className="line"></div>
@@ -24,7 +22,7 @@ const Menu = () => {
           <div className="menu-logo"><img className="menu-logo-img" src={('https://www.petsfolio.com/_ui/images/logo.png')} alt="logo" /></div>
           <div className="menu-title">Menu</div>
         </div>
-    </> 
+    </div> 
   );
 };
 
